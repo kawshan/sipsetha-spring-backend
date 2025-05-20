@@ -30,13 +30,7 @@ public class StudentController {
         return studentDao.findAll(Sort.by(Sort.Direction.DESC,"id"));
     }
 
-    @GetMapping(value = "/studentform")
-    public ModelAndView studentView(){
-        ModelAndView studentUI = new ModelAndView();
-        studentUI.setViewName("student.html");
-        studentUI.addObject("title","student management");
-        return studentUI;
-    }
+
 
     @PostMapping
     public String saveStudent(@RequestBody Student student){

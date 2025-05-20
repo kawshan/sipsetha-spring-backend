@@ -37,13 +37,7 @@ public class StudentRegistrationController {
     private UserDao userDao;
 
 
-    @GetMapping(value = "/studentregistrationform")
-    public ModelAndView getStudentRegistrationUI(){
-        ModelAndView studentRegistrationView = new ModelAndView();
-        studentRegistrationView.setViewName("studentregistration.html");
-        studentRegistrationView.addObject("title","student class registration ");
-        return studentRegistrationView;
-    }
+
 
     @GetMapping(value = "/findall")
     public List<StudentRegistration> getAllStudentRegistration(){
