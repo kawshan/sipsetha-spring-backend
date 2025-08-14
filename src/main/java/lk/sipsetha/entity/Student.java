@@ -54,7 +54,7 @@ public class Student {
     @Column(name = "modifydatetime")
     private LocalDateTime modifydatetime;
 
-    @Column(name = "deletedatetime")
+        @Column(name = "deletedatetime")
     private LocalDateTime deletedatetime;
 
 

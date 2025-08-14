@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
+@CrossOrigin
 //Purpose of @RestController: To simplify the creation of RESTful web services by automatically converting method return values into HTTP responses in JSON or other formats.
 @RestController //@RestController is an annotation in Spring Boot that is used to create RESTful web services. // meken thama apita url request karanna puluwan venne meka naththam apita get post put delete wage request call karanna bari venawa
 @RequestMapping(value = "/student") // request mapping warga dekakata haduna ganna puluwan ekak class level anika method level//class level eken patan gaththoth eeta passe method level eke class level ekata enuwa call kranna puluwan ex /student/findall //meka class level request mapping ekak meken patan aran thama apita path haraha request access karanna puluwan venne udaharanayak vidihata gaththoth /student eken patan aragena /find all eka reques karana eka

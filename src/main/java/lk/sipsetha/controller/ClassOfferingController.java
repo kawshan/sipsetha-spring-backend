@@ -17,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/classoffering")
+@CrossOrigin
 public class ClassOfferingController {
 
     @Autowired

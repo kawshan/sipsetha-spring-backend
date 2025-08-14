@@ -19,6 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/studentregistration")
+@CrossOrigin
 public class StudentRegistrationController {
 
     @Autowired
