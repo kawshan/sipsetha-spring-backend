@@ -15,8 +15,10 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 
+
 @RestController
 @RequestMapping(value = "/attendance")
+@CrossOrigin
 public class AttendanceController {
 
     @Autowired//dependancy injection
