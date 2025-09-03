@@ -18,6 +18,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/classhall")
+@CrossOrigin
 public class ClassHallController {
 
     @Autowired

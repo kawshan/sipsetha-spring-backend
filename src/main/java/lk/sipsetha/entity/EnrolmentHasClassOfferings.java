@@ -17,8 +17,8 @@ public class EnrolmentHasClassOfferings {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Integer id;
+    @Column(name = "enrlId")
+    private Integer idenrlId;
 
     @Column(name = "classfee")
     private BigDecimal classfee;

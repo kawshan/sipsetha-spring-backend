@@ -17,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/classroomallocation")
+@CrossOrigin
 public class ClassRoomAllocationController {
 
     @Autowired  //dependency injection

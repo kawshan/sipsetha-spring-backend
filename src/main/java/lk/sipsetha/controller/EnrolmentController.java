@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/enrolment")
+@CrossOrigin
 public class EnrolmentController {
 
     @Autowired
@@ -66,6 +67,7 @@ public class EnrolmentController {
             for (EnrolmentHasClassOfferings ehco : enrolment.getClassOfferings()){
                 ehco.setEnrolment_id(enrolment);
             }
+            dao.save(enrolment);
             return "ok";
         }catch (Exception e){
             return "update enrolment not complete"+e.getMessage();

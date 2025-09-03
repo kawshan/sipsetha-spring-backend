@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/branch")
+@CrossOrigin
 public class BranchController {
 
     @Autowired
